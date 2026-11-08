@@ -69,10 +69,3 @@ Versions: Python 3.12.14, scikit-learn 1.8.0, NumPy 2.3.5, pandas 2.2.3, SciPy 1
 Install the pinned requirements and use Python 3.12 for the closest reproduction. Retraining creates new model artifacts; changing seeds, preprocessing or package versions may change the results. Never edit metric values to match the reference. Run readme_tools.py after retraining so the tables reflect the current artifacts. If you change the experiment design, rewrite the descriptive text and observations to match it.
 
 Features represent observed sessions. Excluding PageValues alone does not establish that all other features were available early enough for a live decision. The dataset has no usable per-row timestamp for a temporal deployment test. This random split therefore estimates performance on similar sampled sessions, not future conversion lift.
-
-### Documentation
-
-- [scikit-learn 1.8 evaluation metrics](https://scikit-learn.org/1.8/modules/model_evaluation.html)
-- [scikit-learn leakage and preprocessing guidance](https://scikit-learn.org/1.8/common_pitfalls.html)
-- [scikit-learn Gaussian Naive Bayes](https://scikit-learn.org/1.8/modules/naive_bayes.html)
-- [Streamlit Community Cloud deployment](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)
