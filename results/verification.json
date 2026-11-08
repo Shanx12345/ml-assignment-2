@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "Logistic Regression: six metrics, one-class AUC and saved predictions agree",
+    "Decision Tree: six metrics, one-class AUC and saved predictions agree",
+    "KNN: six metrics, one-class AUC and saved predictions agree",
+    "Naive Bayes: six metrics, one-class AUC and saved predictions agree",
+    "Support Vector Machine: six metrics, one-class AUC and saved predictions agree",
+    "Training, validation and test feature rows are disjoint",
+    "Invalid schema, labels, numbers and empty data rejected",
+    "All five model selections executed in Streamlit AppTest",
+    "Uploaded 80-row CSV replaced the bundled test set",
+    "Missing target and single-class uploads handled in the UI",
+    "No Pipeline.fit call occurred during UI checks"
+  ]
+}

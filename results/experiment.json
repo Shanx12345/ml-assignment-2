@@ -1,0 +1,78 @@
+{
+  "reference_run_utc": "2026-11-08T12:26:06.720216+00:00",
+  "execution_location": "Local reference run; not BITS Virtual Lab evidence",
+  "source_url": "https://archive.ics.uci.edu/static/public/468/online+shoppers+purchasing+intention+dataset.zip",
+  "source_sha256": "b3055ee355f59134d851d32641183cb4a8b45def7124d2f50442a042f358e0d9",
+  "seed": 20261107,
+  "raw_rows": 12330,
+  "clean_rows": 12205,
+  "duplicates_removed": 125,
+  "features": [
+    "Administrative",
+    "Administrative_Duration",
+    "Informational",
+    "Informational_Duration",
+    "ProductRelated",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "SpecialDay",
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend"
+  ],
+  "excluded_feature": "PageValues",
+  "positive_class": "Revenue=1 (purchase)",
+  "class_counts": {
+    "0": 10297,
+    "1": 1908
+  },
+  "splits": {
+    "train": {
+      "rows": 7323,
+      "purchases": 1144
+    },
+    "validation": {
+      "rows": 2441,
+      "purchases": 382
+    },
+    "test": {
+      "rows": 2441,
+      "purchases": 382
+    }
+  },
+  "validation_winner": "Logistic Regression",
+  "selection_rule": "Validation MCC, then validation AUC",
+  "chosen_parameters": {
+    "Logistic Regression": {
+      "C": 1.0
+    },
+    "Decision Tree": {
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "KNN": {
+      "n_neighbors": 15,
+      "weights": "distance"
+    },
+    "Naive Bayes": {
+      "var_smoothing": 0.01
+    },
+    "Support Vector Machine": {
+      "C": 0.5,
+      "gamma": "scale"
+    }
+  },
+  "versions": {
+    "python": "3.12.2",
+    "scikit-learn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3"
+  }
+}
