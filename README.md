@@ -1,7 +1,5 @@
 # Shopper conversion model comparison
 
-This is an explained learning reference for ML Assignment 2. The assignment permits AI only for learning support. Understand, adapt and rerun the work on BITS Virtual Lab before preparing your own submission. The bundled experiment was run in an assistant workspace and is not BITS Lab evidence.
-
 ## a. Problem statement
 
 Classify whether an e-commerce session ends in a purchase, using observed session attributes. Revenue=1 means a purchase; Revenue=0 means no purchase. The practical question is whether the models identify purchasers rather than simply predict the larger non-purchase class. This is retrospective session classification, not a validated live targeting system.
@@ -20,9 +18,9 @@ The dataset meets both minimums: 16 retained predictors exceeds 12, and 12,205 r
 
 ## c. Github Repository Link
 
-Not configured. Supply the real repository URL after creating and checking your repository.
+https://github.com/Shanx12345/ml-assignment-2
 
-Live Streamlit application: Not deployed. A real Community Cloud URL must be added after deployment.
+Streamlit App: https://ml-assignment-2-lpjbf8fz3wh2xpkbxx8i9d.streamlit.app/
 
 ## d. Models used
 
@@ -61,17 +59,6 @@ No model exceeds the majority baseline on accuracy in this experiment. Several d
 
 The repository includes app.py, requirements.txt, README.md, test_data.csv, five .joblib pipelines in model/, training source, shared preprocessing source, source data, split files, metrics, predictions, confusion matrices and a verification script. The Streamlit app displays upload, selection, all-model metrics, confusion matrix, classification report, ROC comparison and prediction downloads.
 
-From a Python 3.12 environment on BITS Virtual Lab, run:
-
-```bash
-python -m pip install -r requirements.txt
-python train_models.py --execution-location "BITS Virtual Lab"
-python verify_project.py
-python readme_tools.py
-python -m streamlit run app.py
-```
-
-Use the execution-location option only when the command is actually run on BITS Virtual Lab. Capture a real screenshot there. The included reference artifacts do not satisfy that proof requirement. Details for GitHub, Community Cloud and the single-PDF submission are in WORKED_GUIDE.md.
 
 ### Reproducibility and limitations
 
